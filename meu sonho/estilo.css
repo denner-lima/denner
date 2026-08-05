@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho e Menu (Âncoras) */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #3498db;
+}
+
+/* Área de Conteúdo Principal */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+main h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+main p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Formulário de Contato */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+.form-group textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 12px 20px; 
+    margin-top: 15px;   
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #34495e;
+}
+
+/* Rodapé Obrigatório */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: auto; /* Corrigido de 7px para auto para manter no fundo sempre */
+    font-size: 14px;
+}
+
+footer p {
+    margin: 4px 0px;
+}
+
+footer .academico {
+    font-style: italic;
+    color: #bdc3c7;
+    font-size: 12px;
+}
